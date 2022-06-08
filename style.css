@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+footer {
+    grid-area: footer;
+}
+  
+header {
+    grid-area: header;
+}
+  
+.cuerpo {
+      grid-area: cuerpo;
+}
+  
+.nos {
+      grid-area: nos;
+}
+  
+
+
+@media screen and (min-width: 320px){
+
+#grilla {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto  ;
+    grid-template-areas: "header" "cuerpo" "footer";
+}
+ 
+body{
+    background-color: aqua;
+}
+
+.nos, .consulta, .inicio, .suelo2, .mapa, .agua2, .foliar2 {
+    display: none;
+}     
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+
+}
+
+.navegador{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+li{
+    display: block;
+    border: solid 3px black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact{
+    display: grid;
+    border: 5px solid black;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.suelo{
+    grid-area: suelo;
+}
+.agua{
+    grid-area: agua;
+}
+.contacto{
+    grid-area: contacto;
+}
+.foliar{
+    grid-area: foliar;
+}
+
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 1200px){
+#grilla {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto ;
+  grid-template-areas: "header" "cuerpo" "nos" "footer";
+}
+                           
+                         /*fondo*/
+body { 
+    background-image:
+    url("https://img.lagacetasalta.com.ar/fotos/notas/2020/06/13/847629_202006122015500000001.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+                         /*Header*/
+
+li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    margin-left: 100px; 
+    border: none;   
+}
+
+h1{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size:  40px;
+    text-decoration: none;
+}
+
+.inicio{
+    display: inline-block;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+.navegador{
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+                         /*Cuerpo*/
+
+.cuerpo{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 140px;
+}
+
+.cuerpo__texto{
+    font-style: italic;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.nos{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.media{
+    transition: all 1s;
+}
+
+.media:hover{
+    height: 250px;
+    width: 450px;
+}
+
+
+
+
+
+
+                         /*footer*/
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aqua;
+}
+
+.mapa{
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.consulta{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.contact{
+    display: inline-block;
+    border: 5px solid black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contact__titulo{
+    text-align: center;
+}
+
+.consulta__texto1, .consulta__texto2, .consulta__texto3{
+    display: block;
+    margin: 3px;
+    border: none;
+    border-bottom: 3px solid blueviolet;
+    width: 180px;
+    padding: 2px;
+}
+
+.consulta__texto3{
+    min-height: 60px;
+    resize: none;
+}
+
+                         /*flex pages*/
+
+.nos__img{
+    margin-right: 150px;
+    margin-top: 80px;
+}
+
+.nos__lista{
+    display: flex;
+    margin-left: 220px;
+    align-items: left;
+    justify-content: center;
+    width: 20%;
+}
+
+.suelo2, .agua2, .foliar2{
+    display: inline-block;
+
+}
+
+
+}
