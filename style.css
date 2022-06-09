@@ -246,5 +246,13 @@ footer{
 
 }
 
+.nos__img{
+    transition: all 1s;
+}
+
+.nos__img{
+    height: 250px;
+    width: 450px;
+}
 
 }
