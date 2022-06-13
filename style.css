@@ -39,18 +39,14 @@ body{
     display: none;
 }     
 
-h1{
-    text-align: center;
-    margin-top: 40px;
-    text-decoration: none;
-
+#footer{
+    margin-top: 80px;
 }
 
-.navegador{
-    margin-top: 40px;
-    margin-bottom: 40px;
-
+.cuerpo__texto{
+    margin-top: 30px;
 }
+
 
 li{
     display: block;
@@ -99,14 +95,14 @@ li{
 }
                            
                          /*fondo*/
-body { 
+/*body { 
     background-image:
     url("https://img.lagacetasalta.com.ar/fotos/notas/2020/06/13/847629_202006122015500000001.jpg");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 
                          /*Header*/
 
@@ -114,28 +110,23 @@ li{
     display: inline-block;
     width: 60px;
     text-align: center;
-    margin-left: 100px; 
+    margin-left: 156px; 
     border: none;   
 }
 
 h1{
-    text-align: left;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
     font-size:  40px;
-    text-decoration: none;
+
 }
 
 .inicio{
     display: inline-block;
 }
 
-header{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-}
+
 
 .navegador{
     margin-top: 20px;
@@ -187,7 +178,7 @@ footer{
     grid-template-columns: auto auto auto;
     display: flex;
     justify-content: space-evenly;
-    background-color: aqua;
+    background-color: whitesmoke;
 }
 
 .mapa{
