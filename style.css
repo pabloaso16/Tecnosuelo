@@ -97,7 +97,7 @@ li{
                          /*fondo*/
 body { 
     background-image:
-    url("https://img.lagacetasalta.com.ar/fotos/notas/2020/06/13/847629_202006122015500000001.jpg");
+    url("https://us.123rf.com/450wm/iakov/iakov2005/iakov200500021/146202078-campo-de-hierba-de-primavera-y-cielo-perfecto.jpg?ver=6");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -147,6 +147,7 @@ h1{
     font-style: italic;
     font-size: 19px;
     text-align: justify;
+    color: black;
 }
 
 .nos{
@@ -199,7 +200,7 @@ h1{
     border: none;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: grey;
+    color: black;
 }
 
 .contact__titulo{
