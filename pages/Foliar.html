@@ -11,9 +11,9 @@
     </head>
     <body id="grillaF">
         <header>
-            <nav class="navbar navbar-expand-lg bg-light">
+          <nav class="navbar navbar-expand-lg bg-light, justify-content-end">
                 <div class="container-fluid">
-                  <a class="animate__animated animate__pulse" href="../index.html">TECNOSUELO</a>
+                  <a class="animate__animated animate__pulse" id="titulo" href="../index.html">TECNOSUELO</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -40,13 +40,20 @@
               </nav>
         </header>
 
-        <div class="cuerpo">
-            <p class="cuerpo__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa fuga veritatis nulla est harum corrupti eos molestiae numquam esse nisi velit, odio laudantium atque, labore totam itaque, deserunt id veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa fuga veritatis nulla est harum corrupti eos molestiae numquam esse nisi velit, odio laudantium atque, labore totam itaque, deserunt id veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa fuga veritatis nulla est harum corrupti eos molestiae numquam esse nisi velit, odio laudantium atque, labore totam itaque, deserunt id veniam.</p>
-        </div>
-        <div class="nos"> 
-            <p class="nos__lista"> Listado de analiss Et molestiae ea error aut cum excepturi, laboriosam doloremque pariatur sapiente praesentium nostrum accusamus repellendus eligendi deleniti suscipit quam consequatur delectus commodi voluptatum vero! Commodi officia debitis enim, itaque aliquid amet quo quae rerum officiis. Corrupti eos adipisci porro dolore maxime labore laboriosam vero. Totam debitis corporis at perferendis ex eligendi facere, alias impedit tempore, laudantium asperiores omnis harum!</p> 
-            <img class= "nos__img" src="../imagenes/muestraFoliar.jpg" width="400" height="300"> 
-        </div>
+        <div class="card mb-3 , lista" style="max-width: auto;" >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../imagenes/muestraFoliar.jpg" class="img-fluid rounded-start" width="450px" >
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Tipo de Analisis</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iusto et repellat excepturi blanditiis unde id amet eligendi facere, inventore dicta perspiciatis odit autem. Quae quo numquam quaerat sint quasi molestias pariatur, vitae dignissimos ex dolorem ut illo dicta possimus dolorum omnis accusamus magni saepe, quam architecto exercitationem necessitatibus. Vel doloremque, commodi voluptatem maiores eligendi at optio, quo recusandae enim sint suscipit nulla, explicabo atque eveniet iure error accusantium totam architecto saepe. Aliquam recusandae voluptates ratione, voluptate rem incidunt laboriosam sed nemo labore, laborum nesciunt! Expedita iste ad officia voluptatem sint labore dolor magnam, natus, corrupti nobis dignissimos, perspiciatis amet?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> 
 
         <footer id="footer">
             <div class="contact">
@@ -55,11 +62,11 @@
             <p>Mail:tecnosuelo.adm@gmail.com</p>
             <p>Direccion:Pje Mercado</p>
             </div>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.8470729217925!2d-65.20046338462441!3d-26.812997595511426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d8a82ed46fb%3A0x7ffdb6e011fe5d0f!2sTecnosuelo!5e0!3m2!1ses!2sar!4v1652065718613!5m2!1ses!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.8470729217925!2d-65.20046338462441!3d-26.812997595511426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d8a82ed46fb%3A0x7ffdb6e011fe5d0f!2sTecnosuelo!5e0!3m2!1ses!2sar!4v1652065718613!5m2!1ses!2sar" width="200" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
             <form class="consulta" action="" method="GET" enctype="multipart/form-data">
                 <fieldset>
                     <input class="consulta__texto1" type="text" placeholder="Nombre">
-                    <input class="consulta__texto2" type="text" placeholder="Mail">
+                    <input class="consulta__texto2" type="text" placeholder="name@mail.com">
                     <textarea class="consulta__texto3" placeholder="Consulta"></textarea>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Borrar">
