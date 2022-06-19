@@ -151,11 +151,9 @@ header {
         grid-template-columns: auto auto auto;
         display: flex;
         justify-content: space-evenly;
-
     }
 
-    .mapa,
-    .carousel
+    .mapa
      {
         display: grid;
         margin-top: 20px;
@@ -180,13 +178,15 @@ header {
         margin-bottom: 20px;
     }
 
-    .consulta__texto3 {
+    .consulta__texto {
         resize: none;
-        margin-top: 2px;
-        margin-bottom: 2px;
+        margin-top: 5px;
+        margin-bottom: 3px;
         height: 80px;
     }
-    
+  
+             /*Pages*/  
+
     .lista {
         margin: 100px;
         display: flex;
@@ -198,6 +198,10 @@ header {
         margin-left: auto;
         margin-right: auto;
         margin-top: 80px;
+    }
+
+    .carousel{
+        display: block;
     }
 
 }
