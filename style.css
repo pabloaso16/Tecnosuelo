@@ -182,8 +182,9 @@ header {
 
     .consulta__texto3 {
         resize: none;
-        margin-top: 10px;
-        height: 100px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        height: 80px;
     }
     
     .lista {
