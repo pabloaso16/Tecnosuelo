@@ -1,207 +1,191 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image:
-        url("https://us.123rf.com/450wm/iakov/iakov2005/iakov200500021/146202078-campo-de-hierba-de-primavera-y-cielo-perfecto.jpg?ver=6");
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("https://us.123rf.com/450wm/iakov/iakov2005/iakov200500021/146202078-campo-de-hierba-de-primavera-y-cielo-perfecto.jpg?ver=6");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .cuerpo {
-    grid-area: cuerpo;
+  grid-area: cuerpo;
 }
 
 .nos {
-    grid-area: nos;
+  grid-area: nos;
 }
 
 #titulo {
-    font-size: 30px;
-    text-decoration: none;
-    color: green;
+  font-size: 30px;
+  text-decoration: none;
+  color: green;
 }
-
-
 
 @media screen and (min-width: 320px) {
+  #grilla {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "cuerpo" "footer";
+  }
 
-    #grilla {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "header""cuerpo""footer";
-    }
+  .nos,
+.consulta,
+.inicio,
+.suelo2,
+.mapa,
+.agua2,
+.foliar2,
+.carousel {
+    display: none;
+  }
 
-    .nos,
-    .consulta,
-    .inicio,
-    .suelo2,
-    .mapa,
-    .agua2,
-    .foliar2, 
-    .carousel
-    {
-        display: none;
-    }
+  li {
+    display: block;
+    border: solid 3px black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-    li {
-        display: block;
-        border: solid 3px black;
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+  #footer {
+    margin-top: 80px;
+  }
 
-    #footer {
-        margin-top: 80px;
-    }
+  .cuerpo__texto {
+    margin-top: 30px;
+  }
 
-    .cuerpo__texto {
-        margin-top: 30px;
-    }
+  .contact {
+    display: grid;
+    border: 5px solid black;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 
-    .contact {
-        display: grid;
-        border: 5px solid black;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .lista {
-        margin: 20px;
-        display: flex;
-        align-items: left;
-        justify-content: center;
-    }
-
+  .lista {
+    margin: 20px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+  }
 }
-
-
-
 @media screen and (min-width: 1200px) {
-    #grilla {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: "header""cuerpo""nos""footer";
-    }
+  #grilla {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "cuerpo" "nos" "footer";
+  }
 
-    li {
-        display: inline-block;
-        width: 60px;
-        text-align: center;
-        margin-left: 145px;
-        border: none;
-    }
+  li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    margin-left: 145px;
+    border: none;
+  }
 
-    h1 {
-        margin-top: 15px;
-        margin-bottom: 20px;
-        font-size: 25px;
-        text-decoration: none;
-    }
+  h1 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-decoration: none;
+  }
 
-    .cuerpo {
-        display: flex;
-        margin-left: 20px;
-        margin-right: 30px;
-        margin-top: 30px;
-        margin-bottom: 100px;
-    }
+  .cuerpo {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  .cuerpo .cuerpo__texto {
+    font-style: italic;
+    font-size: 19px;
+    text-align: justify;
+    color: black;
+  }
 
-    .cuerpo__texto {
-        font-style: italic;
-        font-size: 19px;
-        text-align: justify;
-        color: black;
-    }
+  .nos {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+  }
 
-    .nos {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-evenly;
-    }
+  .media {
+    transition: all 1s;
+  }
+  .media:hover {
+    height: 250px;
+    width: 450px;
+  }
 
-    .media {
-        transition: all 1s;
-    }
+  #footer {
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-    .media:hover {
-        height: 250px;
-        width: 450px;
-    }
+  .mapa {
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 
-    #footer {
-        margin-top: 140px;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        display: flex;
-        justify-content: space-evenly;
-    }
+  .contact {
+    display: inline-block;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .contact .contact__titulo {
+    text-align: center;
+  }
 
-    .mapa
-     {
-        display: grid;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
+  .consulta {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .consulta .consulta__texto {
+    resize: none;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    height: 80px;
+  }
 
-    .contact {
-        display: inline-block;
-        border: none;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        color: black;
-    }
+  /*Pages*/
+  .lista {
+    margin: 100px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+  }
 
-    .contact__titulo {
-        text-align: center;
-    }
+  .img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
 
-    .consulta {
-        display: inline-block;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .consulta__texto {
-        resize: none;
-        margin-top: 5px;
-        margin-bottom: 3px;
-        height: 80px;
-    }
-  
-             /*Pages*/  
-
-    .lista {
-        margin: 100px;
-        display: flex;
-        align-items: left;
-        justify-content: center;
-    }
-
-    .img {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 80px;
-    }
-
-    .carousel{
-        display: block;
-    }
-
-}
+  .carousel {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
