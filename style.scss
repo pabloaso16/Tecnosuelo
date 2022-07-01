@@ -31,13 +31,12 @@ header {
     grid-area: nos;
 }
 
-#titulo {
+h1 {
+    text-align: center;
+    margin-top: 30px;
     font-size: 30px;
-    text-decoration: none;
-    color: $colorTitulo;
+    font-style: italic;
 }
-
-
 
 @media screen and (min-width: 320px) {
 
@@ -73,12 +72,13 @@ header {
     }
 
     .cuerpo__texto {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .contact {
         display: grid;
         border: 5px solid $colorPrimario;
+        color: $colorPrimario;
         margin-top: 40px;
         margin-bottom: 10px;
         text-align: center;
@@ -95,7 +95,7 @@ header {
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 991px) {
     #grilla {
         display: grid;
         grid-template-columns: auto;
@@ -105,24 +105,16 @@ header {
 
     li {
         display: inline-block;
-        width: 60px;
+        width: 40px;
         text-align: center;
-        margin-left: 145px;
+        margin-left: 155px;
         border: none;
-    }
-
-    h1 {
-        margin-top: 15px;
-        margin-bottom: 20px;
-        font-size: 25px;
-        text-decoration: none;
     }
 
     .cuerpo {
         display: flex;
         margin-left: 20px;
         margin-right: 30px;
-        margin-top: 30px;
         margin-bottom: 100px;
         .cuerpo__texto {
             font-style: italic;
@@ -186,8 +178,6 @@ header {
             height: 80px;
         }
     }
-
-
   
              /*Pages*/  
 
@@ -207,5 +197,41 @@ header {
     .carousel{
         display: block;
     }
+
+           /*SASS2*/
+
+    $coloresNav: (1:orange, 2:brown, 3:blue, 4:green);
+    .nav-item1 {color: map-get($map: $coloresNav, $key: 1)}
+    .nav-item2 {color: map-get($map: $coloresNav, $key: 2)}
+    .nav-item3 {color: map-get($map: $coloresNav, $key: 3)}
+    .nav-item4 {color: map-get($map: $coloresNav, $key: 4)}
+
+   .boton{
+    width: 50px;
+    height: 25px;
+    text-align: center;
+   }
+
+   .boton1{
+    @extend.boton;
+    border: 1px solid black;
+    margin-left: 45px;
+   }
+
+   .boton2{
+    @extend.boton;
+    border: 1px solid red;
+    margin-left: 5px;
+   }
+
+   @mixin letraEstilo($tamano, $tipo, $color){
+    font-size: $tamano;
+    text-decoration: $tipo;
+    color: $color;
+   }
+
+   #titulo{
+    @include letraEstilo(30px,solid,$colorTitulo)
+   }
 
 }
