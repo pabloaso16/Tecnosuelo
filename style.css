@@ -4,11 +4,15 @@
 }
 
 body {
-  background-image: url("https://us.123rf.com/450wm/iakov/iakov2005/iakov200500021/146202078-campo-de-hierba-de-primavera-y-cielo-perfecto.jpg?ver=6");
+  background-color: rgba(0, 128, 0, 0.397);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.navbar {
+  background-color: aliceblue;
 }
 
 footer {
@@ -34,6 +38,10 @@ h1 {
   font-style: italic;
 }
 
+.nav-link {
+  color: black;
+}
+
 @media screen and (min-width: 320px) {
   #grilla {
     display: grid;
@@ -51,6 +59,12 @@ h1 {
 .foliar2,
 .carousel {
     display: none;
+  }
+
+  .animate__animated {
+    color: green;
+    text-decoration: none;
+    font-size: 20px;
   }
 
   li {
@@ -97,7 +111,7 @@ h1 {
     display: inline-block;
     width: 40px;
     text-align: center;
-    margin-left: 155px;
+    margin-left: 215px;
     border: none;
   }
 
@@ -184,22 +198,6 @@ h1 {
   }
 
   /*SASS2*/
-  .nav-item1 {
-    color: orange;
-  }
-
-  .nav-item2 {
-    color: brown;
-  }
-
-  .nav-item3 {
-    color: blue;
-  }
-
-  .nav-item4 {
-    color: green;
-  }
-
   .boton, .boton2, .boton1 {
     width: 50px;
     height: 25px;
